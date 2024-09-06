@@ -89,13 +89,18 @@ const displayData=(data)=>{
 
     const formData=
     `
-    <ul>
-         <li>Email: ${data.email}</li>
-         <li>Email: ${data.password}</li>
-         <li>Email: ${data.sex}</li>
-         <li>Email: ${data.role}</li>
-         <li>Permissions: ${data.permissions.join(', ')}</li>
-    </ul>
+    <div class="main-data">
+        <div class="input_values">
+        <h3>Form Data</h3>
+            <ul>
+                <li><h5>Email:</h5> ${data.email}</li>
+                <li><h5>Password:</h5> ${data.password}</li>
+                <li><h5>Sex:</h5> ${data.sex}</li>
+                <li><h5>Role:</h5> ${data.role}</li>
+                <li><h5>Permissions:</h5> ${data.permissions.join(', ')}</li>
+            </ul>
+        </div>
+    </div>
     `;
 
     displayElement.innerHTML=formData;

@@ -1,0 +1,33 @@
+.main-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.input_values{
+    background-color:rgb(166, 220, 238);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button{
+    width: 100%;
+    background-color: rgb(68, 114, 199);
+    color:aliceblue;
+    border: none;
+}
+
+.error-message{
+    color: red;
+    display: block;
+}
+
+#email,#password{
+    width: 100%;
+}
+
+li {
+    display: flex;
+    align-items: center; 
+}

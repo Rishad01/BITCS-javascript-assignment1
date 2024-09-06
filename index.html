@@ -3,34 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Simple HTML form</title>
 </head>
 <body>
-    <div id="form">
+    <div id="form" class="main-data">
+        <div class="input_values">
         <form>
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" >
-            <span id="email-error" class="error-message"></span><br><br>
+            <div>
+                <input type="email" id="email" name="email" >
+                <span id="email-error" class="error-message"></span>
+            </div><br>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" >
-            <span id="password-error" class="error-message"></span><br><br>
+            <div>
+                <input type="password" id="password" name="password" >
+                <span id="password-error" class="error-message"></span>
+            </div><br>
             <label for="sex">Sex:</label>
-            <span id="sex-error" class="error-message"></span>
-                <select name="sex" id="sex">
-                <option value="">Select</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Others">Others</option>
-                </select>
-                <br><br>
-            <label for="role">Role:</label><span id="role-error" class="error-message"></span><br>    
+            <div>
+                <span id="sex-error" class="error-message"></span>
+                    <select name="sex" id="sex">
+                        <option value="">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+            </div>
+                <br>
+            <label for="role">Role:</label>
+            <div>
+                <span id="role-error" class="error-message"></span>    
                 <input type="radio" id="admin" name="role" value="Admin">
                 <label for="admin">Admin</label><br>
                 <input type="radio" id="user" name="role" value="User">
                 <label for="user">User</label>
-                <br><br>    
+            </div>
+                <br>   
 
-            <label for="permission">Permission:</label><span id="permission-error" class="error-message"></span><br> 
+            <label for="permission">Permission:</label>
+            <div>
+                <span id="permission-error" class="error-message"></span>
                 <input type="checkbox" id="perm1" name="permissions" value="Perm1">
                 <label for="perm1"> Perm1</label><br>
                 <input type="checkbox" id="perm2" name="permissions" value="Perm2">
@@ -39,12 +52,14 @@
                 <label for="perm3"> Perm3</label><br>
                 <input type="checkbox" id="perm4" name="permissions" value="Perm4">
                 <label for="perm4"> Perm4</label>
-                <br><br>
+            </div>
+                <br>
 
             <button type="button" onclick="submitted()">Submit</button>
         </form>
+        </div>
     </div>
-    <div id="form_data" style="display: none;">
+    <div id="form_data" class="main-data" style="display: none;">
 
     </div>
     <script src="./script.js"></script>
