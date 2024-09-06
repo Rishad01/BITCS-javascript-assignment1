@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML form</title>
+</head>
+<body>
+    <div id="form">
+        <form>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label>
+            <input type="paswword" id="password" name="password"><br><br>
+            <label for="sex">Sex:</label>
+
+                <select name="cars" id="cars">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+                </select>
+                <br>
+            <label for="role">Role:</label><br>    
+                <input type="radio" id="admin" name="role" value="Admin">
+                <label for="admin">Admin</label><br>
+                <input type="radio" id="user" name="role" value="User">
+                <label for="user">User</label><br>    
+
+            <label for="permission">Permission:</label>   <br> 
+                <input type="checkbox" id="perm1" name="perm1" value="Perm1">
+                <label for="perm1"> Perm1</label><br>
+                <input type="checkbox" id="perm2" name="perm2" value="Perm2">
+                <label for="perm2"> Perm2</label><br>
+                <input type="checkbox" id="perm3" name="perm3" value="Perm3">
+                <label for="perm3"> Perm3</label><br>
+                <input type="checkbox" id="perm4" name="perm4" value="Perm4">
+                <label for="perm4"> Perm4</label><br>
+
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </div>
+    <div id="form_data">
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
